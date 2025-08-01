@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ari Villalon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #462d86;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #9169c1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #b793d2;
+}
+
+.center {
+  display: block;
+  /*margin-left: auto;*/
+  margin-right: auto;
+  width: 50%;
+}
+
+.text {
+  color: #dfc8e4;
+}
+.text a{
+  color: #dfc8e4;
+}
+.sidenav a {
+  padding: 8px 0px 8px 8px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #dfc8e4;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.show {display: block;}
+
+.text_item {
+  display: none;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+</style>
+</head>
+
+
+
+
+
+
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+  
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <a href="#">The drop-down background-color is #dfc8e4;</a>
+  <a href="javascript:void(0)" onclick="openDropDown()">Projects</a>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">This color is #b793d2</a>
+    <a href="#" onclick="togglediv('productions')">     Stage Productions</a>
+    <a href="#" onclick="togglediv('readings')">     Stage Readings </a>
+  </div>
+  <a href="#" onclick="togglediv('resume')">Resume</a>
+  <a href="#" onclick="togglediv('sketches')">Sketches</a>
+  <a href="#" onclick="togglediv('contact')">About</a>
+  
+  
+  <a href="javascript:void(0)" onclick="openDropTwo()">Contact</a>
+  <div id="dropTwo" class="dropdown-content">
+    <a href="#">Instagram</a>
+    <a href="https://www.imdb.com/name/nm16772448/">Imdb</a>
+    <a href="https://resumes.actorsaccess.com/1417937-4090353?fbclid=IwY2xjawLn5WlleHRuA2FlbQIxMABicmlkETE0aENPUUVWckVrU0NEejRpAR6yW4zG-3vfyogCqnvVlpaDtW1bkgV2f6ReVjmL8LPMj-jKciIFTxEKT_uc4A_aem_UVaA2idzXjMyBVyJgO81eQ">Actors Access</a>
+  </div>
+  
+</div>
+
+<span style="font-size:30px;cursor:pointer; float: right !important; color: #dfc8e4;" onclick="openNav()">???</span>
+<p style="color: #dfc8e4;">The background-color is #462d86</p>
+<div class="text">
+  <div id="productions"  class="text_item"><b>Stage Productions</b>
+    <p>Antigone - 2016 - Sentry #2/Chorus</p>
+      <img src="C:\Users\Michael\Downloads\New folder\Antigone - 2016 - Sentry 2Chorus - 1.jpg" alt="Antigone - 2016 - Sentry #2/Chorus - 1" class="center">
+      <img src="C:\Users\Michael\Downloads\New folder\Antigone - 2016 - Sentry 2Chorus - 2.gif" alt="Antigone - 2016 - Sentry #2/Chorus - 2" class="center">
+      <img src="C:\Users\Michael\Downloads\New folder\Antigone - 2016 - Sentry 2Chorus - 3.jpg" alt="Antigone - 2016 - Sentry #2/Chorus - 3" class="center">
+      <img src="C:\Users\Michael\Downloads\New folder\Antigone - 2016 - Sentry 2Chorus - 4.jpg" alt="Antigone - 2016 - Sentry #2/Chorus - 3" class="center">
+    <p>12 Angry Jurors - 2015 - Juror #7</p>
+      <img src="C:\Users\Michael\Downloads\New folder\12 Angry Jurors - 2015 - Juror 7 - 1.png" alt="12 Angry Jurors - 2015 - Juror #7 - 1" C>
+      <img src="C:\Users\Michael\Downloads\New folder\12 Angry Jurors - 2015 - Juror 7 - 2.png" alt="12 Angry Jurors - 2015 - Juror #7 - 2" class="center">
+      <img src="C:\Users\Michael\Downloads\New folder\12 Angry Jurors - 2015 - Juror 7 - 3.png" alt="12 Angry Jurors - 2015 - Juror #7 - 3" class="center">
+    <p>Balm in Gilead - 2014 - Rust</p>
+      <img src="C:\Users\Michael\Downloads\New folder\Balm in Gilead - 2014 - Rust - 1.png" alt="Balm in Gilead - 2014 - Rust - 1" class="center">
+      <img src="C:\Users\Michael\Downloads\New folder\Balm in Gilead - 2014 - Rust - 2.png" alt="Balm in Gilead - 2014 - Rust - 2" class="center">
+      <img src="C:\Users\Michael\Downloads\New folder\Balm in Gilead - 2014 - Rust - 3.png" alt="Balm in Gilead - 2014 - Rust - 3" class="center">
+    <p>Simply Maria - 2011 - Chorus</p>
+      <img src="C:\Users\Michael\Downloads\New folder\Simply Maria - 2011 - Chorus - 1.png" alt="Simply Maria - 2011 - Chorus - 1" class="center">
+      <img src="C:\Users\Michael\Downloads\New folder\Simply Maria - 2011 - Chorus - 2.png" alt="Simply Maria - 2011 - Chorus - 2" class="center">
+      <img src="C:\Users\Michael\Downloads\New folder\Simply Maria - 2011 - Chorus - 3.png" alt="Simply Maria - 2011 - Chorus - 3" class="center">
+      <img src="C:\Users\Michael\Downloads\New folder\Simply Maria - 2011 - Chorus - 4.png" alt="Simply Maria - 2011 - Chorus - 4" class="center">
+      <img src="C:\Users\Michael\Downloads\New folder\Simply Maria - 2011 - Chorus - 5.png" alt="Simply Maria - 2011 - Chorus - 5" class="center">
+    <p>Midsummer Night’s Dream - 2008 - Puck</p>
+      <img src="C:\Users\Michael\Downloads\New folder\Midsummer Nights Dream - 2008 - Puck.png" alt="Midsummer Nights Dream - 2008 - Puck" class="center">
+  </div>
+  
+  <div id="readings"  class="text_item"><b>Stage Readings</b>
+    <p></p>
+    <a href="https://www.instagram.com/p/C9YAy-TyJkV/?img_index=1">Aristos: The Musical - 2024 - Underdog Bookstore Reading</a>
+    <p></p>
+      <img src="C:\Users\Michael\Downloads\New folder\Hantext Play Reading Festival.jpg" alt="Hantext play reading festival" class="center">
+    <p></p>
+      <a href="https://www.instagram.com/p/CpV3Sf9vdYl/?img_index=9">Truths & A Lie - 2022 Hantext Play Reading Festival </a>
+      <p></p>
+      <a href="https://www.instagram.com/p/Co-3v82vVgK/?img_index=1">Truths & A Lie - 2022 Hantext Play Reading Festival</a>
+      <p></p>
+      <a href="https://www.instagram.com/p/Co-3v82vVgK/?img_index=7">Truths & A Lie - 2022 Hantext Play Reading Festival</a>
+      <p></p>
+      <a href="https://www.instagram.com/p/CpGUwVxyah2JLyiTottooGMtHEhqKTZJyWCIuM0/?img_index=2">Vroom Vroom - 2022 Hantext Play Reading Festival</a>
+      <p></p>
+      <p><b>Internet - Videos</b></p>
+      <a href="https://drive.google.com/file/d/17sUPMIJCxs5UbELBBmeJBzQkQB3yi4vH/view">Final</a>
+      <p></p>
+      <a href="https://www.patreon.com/posts/other-side-of-us-112020693">The Other Side Of Us</a>
+      <p></p>
+      <a href="https://www.youtube.com/watch?v=11I-ed4nrVg">How To Get A Guy To Notice You (Short Film) (Dir. by Mark Arica)</a>
+      <p></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/11I-ed4nrVg?si=1vfEvkdQaWNiH3zY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p></p>
+      <a href="https://www.youtube.com/watch?v=nIhOctFMw-Y">WRONG YET SO RIGHT!!! Killer Klowns From Outer Space Universal Hollywood Horror Nights 2022 Analysis</a>
+     <p></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/nIhOctFMw-Y?si=GMyNankJ_zbwMTeN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p></p>
+      <a href="https://youtu.be/0MmlDkktn5M?si=IcJyeSdK2QPlp-vQ">Cult of The Lamb Episode 3: Anura In or Anura OUT?? (Trimmed Twitch VOD)</a>
+      <p></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/0MmlDkktn5M?si=rOTvokIL9LPl_uIe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p><b>Internet - VoiceOver</b></p>
+      <a href="https://drive.google.com/file/d/17sUPMIJCxs5UbELBBmeJBzQkQB3yi4vH/view">Episode 7: Afterlife or Bust</a>
+      <p></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HKVFkRFNSIw?si=40E0a7Ij-wqd8MWb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p></p>
+      <a href="https://www.patreon.com/posts/other-side-of-us-112020693">Grotto Guerrero (ep. 1) Let's Meet the Team</a>
+      <p></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/PPTuM84AbZ0?si=SwLPcQQNvRjoEELO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p></p>
+      <a href="https://www.patreon.com/posts/other-side-of-us-112020693">Stray Children - Official Japanese Trailer | Nintendo Direct 2023</a>
+      <p></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dpcSwiXSbBA?si=EfTdIL2ny1aJGceR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p></p>
+      
+
+  </div>
+
+  <div id="resume"  class="text_item">
+    <b>Resume</b>
+  </div>
+ 
+  <div id="sketches"  class="text_item">
+    <b>Sketches</b>
+  </div>
+
+  <div id="about"  class="text_item">
+    <b>About</b>
+  </div>
+
+  <div id="contact"  class="text_item">
+    <b>Contact</b>
+  </div>
+
+</div>
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function openDropDown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function openDropTwo() {
+  document.getElementById("dropTwo").classList.toggle("show");
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+function togglediv(id) {
+  document.querySelectorAll(".text_item").forEach(function(div) {
+    if (div.id == id) {
+      div.style.display = div.style.display == "none" ? "block" : "block";
+    } else {
+      div.style.display = "none";
+    }
+  });
+}
+
+
+</script>
+   
+</body>
+<footer>
+  <div class="footer">
+    <img  src="C:\Users\Michael\Downloads\New folder\BottomScreenTestDogsWalking.png">
+  </div>
+  
+</footer>
+</html> 
