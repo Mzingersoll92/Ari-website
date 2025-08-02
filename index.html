@@ -71,7 +71,7 @@ body {
   display: none;
 }
 .footer {
-  position:fixed;
+  position:static;
   bottom: 0;
   max-height: 30em;
   padding-top: 15px;
@@ -90,7 +90,7 @@ body {
 <div id="mySidenav" class="sidenav">
   
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
+  <a href="#" onclick="togglediv('home')">Home</a>
   <a href="javascript:void(0)" onclick="openDropDown()">Projects</a>
   <div id="myDropdown" class="dropdown-content">
     <a href="#" onclick="togglediv('productions')">     Stage Productions</a>
@@ -112,6 +112,8 @@ body {
 
 <span style="font-size:30px;cursor:pointer; float: right !important; color: #dfc8e4;" onclick="openNav()">???</span>
 <div class="text">
+<div id="home"  class="text_item">
+</div>
   <div id="productions"  class="text_item"><b>Stage Productions</b>
     <p>Antigone - 2016 - Sentry #2/Chorus</p>
       <img src="https://raw.githubusercontent.com/Mzingersoll92/Ari-website/refs/heads/main/Antigone - 2016 - Sentry 2Chorus - 1.jpg" alt="Antigone - 2016 - Sentry #2/Chorus - 1" class="center">
